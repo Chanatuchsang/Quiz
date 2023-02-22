@@ -1,98 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.12.0a4 on darwin)" generated="20230222 15:29:13.255" rpa="false" schemaversion="3">
-<suite id="s1" name="Price" source="/Users/chanatuchsangthongjeen/Desktop/tisco/robot framework/openbrowser/testcase/price.robot">
+<robot generator="Robot 6.0.2 (Python 3.12.0a4 on darwin)" generated="20230222 18:06:22.626" rpa="false" schemaversion="3">
+<suite id="s1" name="Price" source="/Users/chanatuchsangthongjeen/Desktop/tisco/robot framework/openbrowser/Quiz/testcase/price.robot">
 <test id="s1-t1" name="search token" line="8">
 <kw name="Open website" library="common" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://crypto.com/price</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230222 15:29:13.381" level="INFO">Opening browser 'Chrome' to base url 'https://crypto.com/price'.</msg>
-<status status="PASS" starttime="20230222 15:29:13.381" endtime="20230222 15:29:40.909"/>
+<msg timestamp="20230222 18:06:22.745" level="INFO">Opening browser 'Chrome' to base url 'https://crypto.com/price'.</msg>
+<status status="PASS" starttime="20230222 18:06:22.745" endtime="20230222 18:06:46.439"/>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <arg>${1600}</arg>
 <arg>${1000}</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" starttime="20230222 15:29:40.909" endtime="20230222 15:29:43.945"/>
+<status status="PASS" starttime="20230222 18:06:46.439" endtime="20230222 18:06:48.666"/>
 </kw>
-<status status="PASS" starttime="20230222 15:29:13.381" endtime="20230222 15:29:43.945"/>
+<status status="PASS" starttime="20230222 18:06:22.745" endtime="20230222 18:06:48.666"/>
 </kw>
 <kw name="search bitcoin" library="main_feature">
 <arg>${search01.search_text}</arg>
-<kw name="click search" library="search">
+<kw name="click search" library="main_page">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${search}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230222 15:29:43.946" endtime="20230222 15:29:47.972"/>
+<status status="PASS" starttime="20230222 18:06:48.667" endtime="20230222 18:06:52.654"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${search}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230222 15:29:47.972" level="INFO">Clicking element '//*[@data-testid="searchBox"]'.</msg>
-<status status="PASS" starttime="20230222 15:29:47.972" endtime="20230222 15:29:52.091"/>
+<msg timestamp="20230222 18:06:52.655" level="INFO">Clicking element '//*[@data-testid="searchBox"]'.</msg>
+<status status="PASS" starttime="20230222 18:06:52.654" endtime="20230222 18:06:56.270"/>
 </kw>
-<status status="PASS" starttime="20230222 15:29:43.946" endtime="20230222 15:29:52.091"/>
+<status status="PASS" starttime="20230222 18:06:48.667" endtime="20230222 18:06:56.270"/>
 </kw>
-<kw name="input text" library="search">
+<kw name="input text" library="main_page">
 <arg>${search_text}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${inputtext}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230222 15:29:52.091" endtime="20230222 15:29:52.470"/>
+<status status="PASS" starttime="20230222 18:06:56.270" endtime="20230222 18:06:56.325"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${inputtext}</arg>
 <arg>${search_text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230222 15:29:52.471" level="INFO">Typing text 'Bitcoin' into text field '//*[@data-testid="searchInput"]'.</msg>
-<status status="PASS" starttime="20230222 15:29:52.470" endtime="20230222 15:29:53.492"/>
+<msg timestamp="20230222 18:06:56.325" level="INFO">Typing text 'Bitcoin' into text field '//*[@data-testid="searchInput"]'.</msg>
+<status status="PASS" starttime="20230222 18:06:56.325" endtime="20230222 18:06:57.414"/>
 </kw>
-<status status="PASS" starttime="20230222 15:29:52.091" endtime="20230222 15:29:53.492"/>
+<status status="PASS" starttime="20230222 18:06:56.270" endtime="20230222 18:06:57.414"/>
 </kw>
-<kw name="click token" library="search">
+<kw name="click token" library="main_page">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${BTC}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230222 15:29:53.492" endtime="20230222 15:29:55.264"/>
+<status status="PASS" starttime="20230222 18:06:57.414" endtime="20230222 18:06:59.002"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${BTC}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230222 15:29:55.264" level="INFO">Clicking element '//*[@class="bitcoin-search-result css-18esedh"]'.</msg>
-<status status="PASS" starttime="20230222 15:29:55.264" endtime="20230222 15:29:55.914"/>
+<msg timestamp="20230222 18:06:59.002" level="INFO">Clicking element '//*[@class="bitcoin-search-result css-18esedh"]'.</msg>
+<status status="PASS" starttime="20230222 18:06:59.002" endtime="20230222 18:07:00.387"/>
 </kw>
-<status status="PASS" starttime="20230222 15:29:53.492" endtime="20230222 15:29:55.914"/>
+<status status="PASS" starttime="20230222 18:06:57.414" endtime="20230222 18:07:00.387"/>
 </kw>
-<kw name="validate text" library="search">
+<status status="PASS" starttime="20230222 18:06:48.666" endtime="20230222 18:07:00.387"/>
+</kw>
+<kw name="verify bitcoin" library="bitcoin_feature">
+<arg>${search01.search_text}</arg>
+<kw name="validate text" library="bitcoin_page">
 <arg>${search_text}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${text_bitcoin}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230222 15:29:55.914" endtime="20230222 15:29:59.295"/>
+<status status="PASS" starttime="20230222 18:07:00.387" endtime="20230222 18:07:03.625"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>${text_bitcoin}</arg>
 <arg>${search_text}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230222 15:29:59.488" level="INFO">Element '//*[@class="chakra-heading css-1xvru47"]' contains text 'Bitcoin'.</msg>
-<status status="PASS" starttime="20230222 15:29:59.295" endtime="20230222 15:29:59.488"/>
+<msg timestamp="20230222 18:07:03.711" level="INFO">Element '//*[@class="chakra-heading css-1xvru47"]' contains text 'Bitcoin'.</msg>
+<status status="PASS" starttime="20230222 18:07:03.625" endtime="20230222 18:07:03.711"/>
+</kw>
+<status status="PASS" starttime="20230222 18:07:00.387" endtime="20230222 18:07:03.711"/>
+</kw>
+<status status="PASS" starttime="20230222 18:07:00.387" endtime="20230222 18:07:03.711"/>
 </kw>
 <kw name="Debug" library="DebugLibrary">
 <doc>Open a interactive shell, run any RobotFramework keywords.</doc>
-<status status="PASS" starttime="20230222 15:29:59.488" endtime="20230222 15:30:17.212"/>
+<status status="PASS" starttime="20230222 18:07:03.711" endtime="20230222 18:07:08.979"/>
 </kw>
-<status status="PASS" starttime="20230222 15:29:55.914" endtime="20230222 15:30:17.212"/>
-</kw>
-<status status="PASS" starttime="20230222 15:29:43.945" endtime="20230222 15:30:17.213"/>
-</kw>
-<kw name="Debug" library="DebugLibrary">
-<doc>Open a interactive shell, run any RobotFramework keywords.</doc>
-<status status="PASS" starttime="20230222 15:30:17.213" endtime="20230222 15:30:18.537"/>
-</kw>
-<status status="PASS" starttime="20230222 15:29:13.380" endtime="20230222 15:30:18.537"/>
+<status status="PASS" starttime="20230222 18:06:22.745" endtime="20230222 18:07:08.979"/>
 </test>
-<status status="PASS" starttime="20230222 15:29:13.255" endtime="20230222 15:30:18.537"/>
+<status status="PASS" starttime="20230222 18:06:22.626" endtime="20230222 18:07:08.979"/>
 </suite>
 <statistics>
 <total>

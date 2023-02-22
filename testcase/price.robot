@@ -6,6 +6,7 @@ Test Setup    common.Open website
 
 *** Test Cases ***
 search token
-    main_feature.search bitcoin   ${search01.search_text}
+    main_feature.search bitcoin     ${search01.search_text}
+    bitcoin_feature.verify bitcoin   ${search01.search_text}
 
     Debug
