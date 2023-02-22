@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.12.0a4 on darwin)" generated="20230222 15:29:13.255" rpa="false" schemaversion="3">
+<suite id="s1" name="Price" source="/Users/chanatuchsangthongjeen/Desktop/tisco/robot framework/openbrowser/testcase/price.robot">
+<test id="s1-t1" name="search token" line="8">
+<kw name="Open website" library="common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://crypto.com/price</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230222 15:29:13.381" level="INFO">Opening browser 'Chrome' to base url 'https://crypto.com/price'.</msg>
+<status status="PASS" starttime="20230222 15:29:13.381" endtime="20230222 15:29:40.909"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>${1600}</arg>
+<arg>${1000}</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20230222 15:29:40.909" endtime="20230222 15:29:43.945"/>
+</kw>
+<status status="PASS" starttime="20230222 15:29:13.381" endtime="20230222 15:29:43.945"/>
+</kw>
+<kw name="search bitcoin" library="main_feature">
+<arg>${search01.search_text}</arg>
+<kw name="click search" library="search">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230222 15:29:43.946" endtime="20230222 15:29:47.972"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${search}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230222 15:29:47.972" level="INFO">Clicking element '//*[@data-testid="searchBox"]'.</msg>
+<status status="PASS" starttime="20230222 15:29:47.972" endtime="20230222 15:29:52.091"/>
+</kw>
+<status status="PASS" starttime="20230222 15:29:43.946" endtime="20230222 15:29:52.091"/>
+</kw>
+<kw name="input text" library="search">
+<arg>${search_text}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${inputtext}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230222 15:29:52.091" endtime="20230222 15:29:52.470"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inputtext}</arg>
+<arg>${search_text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230222 15:29:52.471" level="INFO">Typing text 'Bitcoin' into text field '//*[@data-testid="searchInput"]'.</msg>
+<status status="PASS" starttime="20230222 15:29:52.470" endtime="20230222 15:29:53.492"/>
+</kw>
+<status status="PASS" starttime="20230222 15:29:52.091" endtime="20230222 15:29:53.492"/>
+</kw>
+<kw name="click token" library="search">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${BTC}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230222 15:29:53.492" endtime="20230222 15:29:55.264"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTC}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230222 15:29:55.264" level="INFO">Clicking element '//*[@class="bitcoin-search-result css-18esedh"]'.</msg>
+<status status="PASS" starttime="20230222 15:29:55.264" endtime="20230222 15:29:55.914"/>
+</kw>
+<status status="PASS" starttime="20230222 15:29:53.492" endtime="20230222 15:29:55.914"/>
+</kw>
+<kw name="validate text" library="search">
+<arg>${search_text}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${text_bitcoin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230222 15:29:55.914" endtime="20230222 15:29:59.295"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${text_bitcoin}</arg>
+<arg>${search_text}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20230222 15:29:59.488" level="INFO">Element '//*[@class="chakra-heading css-1xvru47"]' contains text 'Bitcoin'.</msg>
+<status status="PASS" starttime="20230222 15:29:59.295" endtime="20230222 15:29:59.488"/>
+</kw>
+<kw name="Debug" library="DebugLibrary">
+<doc>Open a interactive shell, run any RobotFramework keywords.</doc>
+<status status="PASS" starttime="20230222 15:29:59.488" endtime="20230222 15:30:17.212"/>
+</kw>
+<status status="PASS" starttime="20230222 15:29:55.914" endtime="20230222 15:30:17.212"/>
+</kw>
+<status status="PASS" starttime="20230222 15:29:43.945" endtime="20230222 15:30:17.213"/>
+</kw>
+<kw name="Debug" library="DebugLibrary">
+<doc>Open a interactive shell, run any RobotFramework keywords.</doc>
+<status status="PASS" starttime="20230222 15:30:17.213" endtime="20230222 15:30:18.537"/>
+</kw>
+<status status="PASS" starttime="20230222 15:29:13.380" endtime="20230222 15:30:18.537"/>
+</test>
+<status status="PASS" starttime="20230222 15:29:13.255" endtime="20230222 15:30:18.537"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Price">Price</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
